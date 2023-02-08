@@ -1,0 +1,124 @@
+*, html, body{
+    padding:0;
+    margin:0;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('https://s0.2mdn.net/creatives/assets/2805667/myriadpro_regular.woff2') format('woff2'), /* Super Modern Browsers 
+       url('https://s0.2mdn.net/creatives/assets/2805667/myriadpro_regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: 'MyriadPro-BoldIt';
+  src: url('https://s0.2mdn.net/creatives/assets/2805667/myriadpro_boldit.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://s0.2mdn.net/creatives/assets/2805667/myriadpro_boldit.woff') format('woff'); /* Pretty Modern Browsers */
+}
+body{
+    background-color:#FFFFFF;
+    font-family: 'Muli', sans-serif;
+}
+div{
+    position: absolute;
+}
+#adwrapper, #content {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+/*img{
+    width:100%;
+}*/
+#border{
+    width:298px;
+    height:248px;
+    border:1px solid #000;
+    z-index: 999;
+    opacity: 0.1;
+    pointer-events:none;
+}
+img {
+    width: 100%
+}
+#cta {
+    background: #ee3135;
+    top: 195px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    right: 10px;
+    min-width: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+}
+#fractals {
+    right: 300px;
+    width: 300px;
+}
+#product_title {
+    width: 130px;
+    padding: 10px;
+    top: 40px;
+    color: #fff;
+}
+#price {
+    width: 130px;
+    padding: 10px;
+    top: 198px;
+    color: #fff;
+}
+#dp {
+    width: 130px;
+    padding: 10px;
+    top: 60px;
+    color: #fff;
+    left: 150px;
+}
+#discount_percentage {
+    width: 130px;
+    padding: 10px;
+    top: 140px;
+    color: #fff;
+    left: 150px;
+}
+#hours_left {
+    padding: 10px;
+    top: 30px;
+    left: 220px;
+    color: #fff;
+}
+/* Hide All */
+#content, #image1, #image2, #product_title, #price, #dp, #discount_percentage, #hourImage, #hours_left, #logo, #cta{
+    opacity: 0;
+}
+
+#loader {
+    margin:auto;position:absolute;top:0;left:0;bottom:0;right:0; /* horizontal and vertical center */
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #999; /* Dark Grey */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 2s linear;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+    transform: translateZ(0);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.show{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
+}

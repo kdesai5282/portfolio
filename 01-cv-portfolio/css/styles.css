@@ -185,7 +185,7 @@ header .info .right-area{
 
 .portfolio-section .p-item{ width: 33%; padding: 0 7.5px 0px; margin-top: 15px; }
 
-.portfolio-section .p-item .iphone{background: url(../../../images/iphone-7-screen.png); background-repeat: no-repeat; display: block;
+.portfolio-section .p-item .iphone{background: url(../../images/iphone-7-screen.png); background-repeat: no-repeat; display: block;
     width: 327px;
     height: 674px;
     background-size: cover;
